@@ -1,6 +1,8 @@
 package nan.learnjava.screenbroadcast;
 
 
+import java.awt.image.BufferedImage;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -28,5 +30,10 @@ public class ClientUI extends JFrame{
 		this.setVisible(true);
 		
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public void refreshImage(byte[] imageData) {
+		icon = new ImageIcon(imageData);
+		label.setIcon(icon);
 	}
 }

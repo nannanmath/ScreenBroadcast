@@ -33,12 +33,13 @@ public class ScreenBroadcastServer {
 			//GZIP compress
 			byte[] gzipData = gzipCompress(rawData);
 			
-//			// new DatagramPacket.
-//			DatagramPacket pack = new DatagramPacket(data, data.length);
-//			pack.setAddress(InetAddress.getByName("127.0.0.1"));
-//			pack.setPort(8889);
-//			// send packet.
-//			sock.send(pack);			
+			// new DatagramPacket.
+			DatagramPacket pack = new DatagramPacket(gzipData, gzipData.length);
+			pack.setAddress(InetAddress.getByName("127.0.0.1"));
+			pack.setPort(8889);
+			// send packet.
+			sock.send(pack);
+			System.out.println("A pack has sent to " + pack.getPort());
 		}
 	}
 	
