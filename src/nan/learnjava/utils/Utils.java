@@ -25,6 +25,5 @@ public class Utils {
 		long l7 = ((long) bytes[7] & 0xff) << 0;
 
 		return l0 | l1 | l2 | l3 | l4 | l5 | l6 | l7;
-
 	}
 }
