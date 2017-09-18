@@ -21,7 +21,7 @@ public class ScreenBroadcastServer {
 		DatagramSocket sock = new DatagramSocket(8888);
 		while(true){
 			// get Screenshot image.
-			Rectangle rect = new Rectangle(0,0,1366,768);
+			Rectangle rect = new Rectangle(0,0,1440,900);
 			BufferedImage bi = new Robot().createScreenCapture(rect);
 			//ImageIO.write(bi, "jpg", new FileOutputStream("ScreenShot.jpg"));
 			

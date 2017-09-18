@@ -16,7 +16,7 @@ public class ClientUI extends JFrame{
 	}
 	
 	public void init(){
-		this.setBounds(0, 0, 1024, 768);
+		this.setBounds(0, 0, 1440, 900);
 		this.setLayout(null);
 		
 		icon = new ImageIcon("ScreenShot.jpg");
